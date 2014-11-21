@@ -3,12 +3,14 @@
 	.lines--red-white {
 		height: .375em;
 		background: $red;
-		border-bottom: solid $white .375em;
+		border-bottom: .375em solid $white ;
+		box-sizing: content-box;
 	}
 	
 	.lines--blue-blue {
 		height: .375em;
 		background: $blue;
-		border-bottom: solid $black .1875em;
+		border-bottom: .1875em solid $black;
+		box-sizing: content-box;		
 	}
 }
