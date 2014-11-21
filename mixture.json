@@ -16,6 +16,13 @@
   "projectDescription": "My project description",
   "projectName": "fixie-html",
   "publishedId": null,
+  "sass": {
+    "globbing": true,
+    "lineNumbers": false,
+    "outputStyle": "compressed",
+    "sourceMap": false,
+    "useLibSass": false
+  },
   "serverHostname": null,
   "serverPort": null,
   "simpleModePartnerServer": null,
