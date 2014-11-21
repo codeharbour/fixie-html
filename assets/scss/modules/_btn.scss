@@ -1,0 +1,25 @@
+.btn {
+	display: inline-block;
+	text-transform: uppercase;
+	padding: .5em 1em;
+	font-size: .875em;
+	transition: background .3s;
+}
+
+.btn--red {
+	background: $red;
+	color: $white;
+	
+	&:hover {
+		background: darken($red, 15%)
+	}	
+}
+
+.btn--blue {
+	background: $blue;
+	color: $white;	
+	
+	&:hover {
+		background: darken($blue, 15%)
+	}
+}

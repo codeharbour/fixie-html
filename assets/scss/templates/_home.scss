@@ -1,0 +1,18 @@
+.actions {
+	margin-top: 2em;
+	
+	.btn {
+		font-size: 1.25em;
+		margin: 0 auto 1em auto;
+		display: block;
+		text-align: center;
+		width: 80%;
+		max-width: 280px;
+		
+		.icon-search,
+		.icon-star
+		 {
+			margin-right: .5em;
+		}
+	}
+}
