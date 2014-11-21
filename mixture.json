@@ -1,4 +1,11 @@
 {
+  "autoPrefixer": {
+  "active": true,
+  "browsers": [
+    "last 2 version",
+    "ie 8"
+  ]
+  },
   "convertHtml": {
     "relativePaths": false
   },

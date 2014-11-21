@@ -9,6 +9,7 @@
 .btn--red {
 	background: $red;
 	color: $white;
+	border: .25em solid $red;
 	
 	&:hover {
 		background: darken($red, 15%)
@@ -17,7 +18,9 @@
 
 .btn--blue {
 	background: $blue;
-	color: $white;	
+	color: $white;
+	border: .25em solid $blue;
+	
 	
 	&:hover {
 		background: darken($blue, 15%)
