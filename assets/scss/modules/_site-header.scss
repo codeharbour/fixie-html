@@ -1,0 +1,22 @@
+.site-header {
+	@extend %cf;
+
+	.branding {
+		max-width: 100px;
+		margin: 0;
+		float: left;
+		padding: .5em 1em;
+	}
+	
+	.home-link {
+		float: right;
+		font-size: 1.5em;
+		color: $white;
+		transition: color .3s;
+		padding: .5em 1em;
+		
+		&:hover {
+			color: darken($white, 10%);
+		}
+	}
+}
