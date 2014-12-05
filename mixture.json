@@ -26,7 +26,7 @@
   "sass": {
     "globbing": true,
     "lineNumbers": false,
-    "outputStyle": "compressed",
+    "outputStyle": "nested",
     "sourceMap": false,
     "useLibSass": false
   },
