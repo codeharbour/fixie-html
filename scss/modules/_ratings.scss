@@ -5,6 +5,7 @@
   .stars {
 	unicode-bidi: bidi-override;
 	direction: rtl;
+	display: inline-block;
   }
   .stars > span {
 	font-size: 2em;
@@ -15,10 +16,14 @@
 	color: #ddd;
   }
   .stars > span:hover:before,
-  .stars > span.on,
   .stars > span:hover ~ span:before {
 	content: "\2605";
 	position: absolute;
 	color: gold;
   }
+  
+  .stars > span.on {
+		color: gold;
+	}
+
 }
