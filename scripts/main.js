@@ -7,18 +7,14 @@ jQuery(document).ready(function($) {
 		e.preventDefault();
 	});
 	
-	$('body').on('click', function(e)  {
-		$(this).removeClass('fixed-page');
+	$('body').on('click', '#overlay', function(e)  {
+		$('body').removeClass('fixed-page');
 		$('.cafe__details').removeClass('show');
 		$('#overlay').remove('#overlay');
 		e.stopPropagation();
 	})
-	
-	$('.cafe__details').on('click', function(e) {
-		e.stopPropagation();
-	})
-	
-	$('.close-button').on('click', function()  {
+		
+	$('.close-button').on('click', function(e)  {
 		$('body').removeClass('fixed-page');
 		$('.cafe__details').removeClass('show');
 		$('#overlay').remove('#overlay');
