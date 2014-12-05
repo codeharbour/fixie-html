@@ -16,10 +16,10 @@
   "lintScripts": false,
   "modelSource": null,
   "preprocessorLocations": [
-    "assets"
+    "/"
   ],
-  "preprocessorScriptOutput": "assets/js",
-  "preprocessorStyleOutput": "assets/css",
+  "preprocessorScriptOutput": "scripts",
+  "preprocessorStyleOutput": "styles",
   "projectDescription": "My project description",
   "projectName": "fixie-html",
   "publishedId": null,
