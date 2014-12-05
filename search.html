@@ -9,6 +9,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="styles/main.min.css">
         <link href='http://fonts.googleapis.com/css?family=Oxygen:300' rel='stylesheet' type='text/css'>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     </head>
     <body>
 	    <div class="lines">
@@ -20,17 +21,16 @@
 			    <h1 class="branding"><a href="index.html"><img src="images/fixie-logo.svg"></a></h1>
 			    <a href="index.html" class="home-link" title="return to home screen"><span class="icon-home"></span></a>
 		    </header>
-			<div class="map-container">
 				<div class="map">
 					<!-- temp to see in design -->
 					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20049.50187707005!2d1.139584669942531!3d51.086542773555294!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2suk!4v1417777606468" width="100%" height="240" frameborder="0" style="border:0"></iframe>
 				</div>
-			</div>
 		    <section class="content">
 			    <ol class="cafe-list">
 				    <li>
-					    <a href="#">
-						    <article class="cafe">
+					    <article class="cafe">
+						    <a class="details-link" href="#">
+						    <div class="cafe__overview">
 							    <div class="more-button">&raquo;</div>
 						    	<h2 class="cafe__title">The Greasy Spoon</h2>
 						    	<div class="rating">
@@ -41,14 +41,55 @@
 											<span class="star-2 on">&#x2605;</span>
 											<span class="star-1 on">&#x2605;</span>
 										</div>
-										<div class="rating__amount">4 ratings</div>
+										<div class="rating__meta">4 ratings</div>
 						    	</div>
 						    	<div class="cafe__distance">0.1 miles</div>
-						    </article>
-					    </a>
+						    </div>
+					     	</a>
+					    	<div class="cafe__details">
+						    	<div class="close-button"><a href="#">&times;</a></div>
+						    	<h2 class="cafe__title">The Greasy Spoon</h2>
+						    	<ul class="reviews">
+							    	
+							    	<li class="review">
+							    		<div class="rating">
+									    	<div class="stars">
+													<span class="star-5">&#x2605;</span>
+													<span class="star-4 on">&#x2605;</span>
+													<span class="star-3 on">&#x2605;</span>
+													<span class="star-2 on">&#x2605;</span>
+													<span class="star-1 on">&#x2605;</span>
+												</div>
+												<div class="rating__meta">Rated 5th Oct 2013</div>
+								    	</div>
+								    	<div class="review__entry">
+								    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed magna feugiat, scelerisque nunc sit amet, consectetur turpis. Mauris feugiat, lorem vel aliquet condimentum, sem purus lobortis diam, vitae euismod felis tellus vitae quam. Sed commodo massa nisl, sed porttitor turpis congue at. Sed eget sodales nulla. Nam erat nisl, viverra non pulvinar ac, congue vitae lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor tincidunt tempus. Nulla quis augue vitae leo dignissim dapibus. Cras id dui tortor.</p>
+								    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed magna feugiat, scelerisque nunc sit amet, consectetur turpis. Mauris feugiat, lorem vel aliquet condimentum, sem purus lobortis diam, vitae euismod felis tellus vitae quam. Sed commodo massa nisl, sed porttitor turpis congue at. Sed eget sodales nulla. Nam erat nisl, viverra non pulvinar ac, congue vitae lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor tincidunt tempus. Nulla quis augue vitae leo dignissim dapibus. Cras id dui tortor.</p>									    	
+								    	</div>
+							    	</li>
+							    	
+							    	<li class="review">
+							    		<div class="rating">
+									    	<div class="stars">
+													<span class="star-5">&#x2605;</span>
+													<span class="star-4 on">&#x2605;</span>
+													<span class="star-3 on">&#x2605;</span>
+													<span class="star-2 on">&#x2605;</span>
+													<span class="star-1 on">&#x2605;</span>
+												</div>
+												<div class="rating__meta">Rated 5th Oct 2013</div>
+								    	</div>
+								    	<div class="review__entry">
+								    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed magna feugiat, scelerisque nunc sit amet, consectetur turpis. Mauris feugiat, lorem vel aliquet condimentum, sem purus lobortis diam, vitae euismod felis tellus vitae quam. Sed commodo massa nisl, sed porttitor turpis congue at. Sed eget sodales nulla. Nam erat nisl, viverra non pulvinar ac, congue vitae lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor tincidunt tempus. Nulla quis augue vitae leo dignissim dapibus. Cras id dui tortor.</p>
+								    	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sed magna feugiat, scelerisque nunc sit amet, consectetur turpis. Mauris feugiat, lorem vel aliquet condimentum, sem purus lobortis diam, vitae euismod felis tellus vitae quam. Sed commodo massa nisl, sed porttitor turpis congue at. Sed eget sodales nulla. Nam erat nisl, viverra non pulvinar ac, congue vitae lorem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam tempor tincidunt tempus. Nulla quis augue vitae leo dignissim dapibus. Cras id dui tortor.</p>									    	
+								    	</div>
+							    	</li>
+							    	
+					    	</div>
+					    </article>
 				    </li>
 				    <li>
-					    <a href="#">				    
+					    <a class="details-link" href="#">				    
 						    <article class="cafe">
 							    <div class="more-button">&raquo;</div>							    
 						    	<h2 class="cafe__title">The Airport Cafe</h2>
@@ -60,14 +101,14 @@
 												<span class="star-2 on">&#x2605;</span>
 												<span class="star-1 on">&#x2605;</span>
 											</div>
-											<div class="rating__amount">17 ratings</div>
+											<div class="rating__meta">17 ratings</div>
 							    	</div>
 						    	<div class="cafe__distance">0.3 miles</div>
 						    </article>
 					    </a>
 				    </li>
 				    <li>
-					    <a href="#">				    
+					    <a class="details-link" href="#">				    
 						    <article class="cafe">
 							    <div class="more-button">&raquo;</div>
 						    	<h2 class="cafe__title">Old Betty's</h2>
@@ -79,14 +120,14 @@
 												<span class="star-2">&#x2605;</span>
 												<span class="star-1 on">&#x2605;</span>
 											</div>
-											<div class="rating__amount">1 ratings</div>
+											<div class="rating__meta">1 ratings</div>
 							    	</div>
 						    	<div class="cafe__distance">2 miles</div>
 						    </article>
 					    </a>
 				    </li>
 				    <li>
-					    <a href="#">					    
+					    <a class="details-link" href="#">					    
 						    <article class="cafe">
 						    <div class="more-button">&raquo;</div>
 						    	<h2 class="cafe__title">The Big Butty</h2>
@@ -98,7 +139,7 @@
 												<span class="star-2 on">&#x2605;</span>
 												<span class="star-1 on">&#x2605;</span>
 											</div>
-											<div class="rating__amount">101 ratings</div>
+											<div class="rating__meta">101 ratings</div>
 							    	</div>
 						    	<div class="cafe__distance">5 miles</div>
 						    </article>
@@ -117,7 +158,7 @@
 												<span class="star-2 on">&#x2605;</span>
 												<span class="star-1 on">&#x2605;</span>
 											</div>
-											<div class="rating__amount">7 ratings</div>
+											<div class="rating__meta">7 ratings</div>
 							    	</div>
 						    	<div class="cafe__distance">9 miles</div>
 						    </article>
@@ -126,5 +167,6 @@
 			    </ol>
 		    </section>
 	    </div>
+	    <script src="scripts/main.min.js"></script> 
     </body>
 </html>

@@ -27,9 +27,64 @@
 			width: .9em;
 		}
 		
-		.rating__amount {
+		.rating__meta {
 			display: inline-block;
 			font-size: 14px;
 		}
 	}
+	
+	.cafe__details {
+		position: absolute;
+		left: -100%;
+		width: 90%;
+		top: 0;
+		transition: left .3s;
+		background: $white;
+		padding: 1em;
+		
+		// applied with js
+		&.show {
+			left: 0;
+			height: 100%;
+			z-index: 100;
+			box-shadow: 0 0 4px rgba(0,0,0, .4);
+			overflow: scroll;
+			position: fixed;
+		}
+		
+		.cafe__title {
+			padding-right: 30px;
+		}
+	}
 }
+
+// class applied to body tag when .cafe__details are visible
+.fixed-page {
+	position: fixed;
+}
+
+.reviews {
+	list-style: none;
+	padding-left: 0;
+}
+
+.review {
+	margin-bottom: 1em;
+	border-bottom: 1px solid darken($white, 10%);
+	
+	&:last-child {
+		border-bottom: none;
+	}
+	
+.review__entry {
+		
+		p {
+			font-size: .8125em;
+			
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+}	
+	
