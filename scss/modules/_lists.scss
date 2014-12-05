@@ -1,0 +1,17 @@
+.cafe-list {
+	margin: 0;
+	padding-left: 2em;
+	
+	li {
+		font-size: 18px;
+		font-weight: 300;
+	
+	a {
+			color: $black;
+		
+			&:focus {
+			outline: none;			
+			}
+		}
+	}
+}
